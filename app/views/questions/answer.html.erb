@@ -1,8 +1,13 @@
-<h1> Stupid Coaching</h1>
-
-<p><%= params[:question] %></p>
-<p><em>-You</em></p>
-
-<p><%= @answer %></p>
-<p><em>-Your Coach</em></p>
+<div class= "ms-4 border-start border-5">
+<p class= "h3"><%= params[:question] %></p>
+<p class= "h4"><em>-You</em></p>
+</div>
+<br>
+<br>
+<div class= "ms-4 bg-warning p-2 text-dark bg-opacity-25 border-start border-5">
+<p class= "h3"><%= @answer %></p>
+<p class= "h4"><em>-Your Coach</em></p>
+</div>
+<br>
+<br>
 <%= link_to "Ask another question", ask_path %>
